@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+
+    <servlet>
+        <servlet-name>MonitoringTable</servlet-name>
+        <jsp-file>/pages/monitoring_table.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MonitoringTable</servlet-name>
+        <url-pattern>/monitoring_table</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateTable</servlet-name>
+        <jsp-file>/pages/update_table.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateTable</servlet-name>
+        <url-pattern>/update_table</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InsertTable</servlet-name>
+        <jsp-file>/pages/insert_table.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InsertTable</servlet-name>
+        <url-pattern>/insert_table</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- Error pages -->
+    <servlet>
+        <servlet-name>DriverError</servlet-name>
+        <jsp-file>/pages/error/driver_error.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DriverError</servlet-name>
+        <url-pattern>/driver_error</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ConnectionError</servlet-name>
+        <jsp-file>/pages/error/db_connection_error.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConnectionError</servlet-name>
+        <url-pattern>/connection_error</url-pattern>
+    </servlet-mapping>
+</web-app>
